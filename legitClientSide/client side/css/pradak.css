@@ -1,0 +1,200 @@
+.container h2{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+/*** CAROUSEL ***/
+.align-right {
+    float: right;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fixed-size {
+    width:  100%; /* Set desired width */
+    height: 500px; /* Set desired height */
+    object-fit:cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+  .fixed-size-image {
+    width: 1000px; /* Set your desired width */
+    height: 500px; /* Set your desired height */
+    object-fit:contain; /* Ensures the image covers the area without distortion */
+}
+  .card-size{
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    float: center;
+    background-color: rgba(255, 255, 254, 0.2);
+    
+  }
+  .card-size:hover{
+    background-color: rgba(255, 255, 254, 0.5);
+    margin-top: 10px;
+  }
+  .card-size img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    text-align: justify;
+  }
+  .card-item{
+    height: 100px;
+  }
+.card-body .card-title{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+.card-text{
+    font-size: 20px;
+    font-weight: bold  ;
+}
+span .small{
+    font-size: 15px;
+    color: #F874A0  ;
+    
+}
+
+.card-body .btn{
+    width: 100%;
+    background-color:#F874A0 ;
+    font-size: 12px;
+    color: white;
+}
+.card-body .btn:hover{
+    background-color: transparent;
+    border: 1px solid #F874A0;
+    color: #333;
+}
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
+  
+  /*** CAROUSEL END ***/
+/* .modal{
+    float: left;
+    width: 1000px;
+
+} */
+  .modal-content{
+    width: 1000px;
+    float: left;
+
+
+  }
+  .modal-body{
+    width: 100%;
+  }
+  /* Ensure modal dialog is centered */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    min-height: calc(100% - 1rem);
+}
+
+/* Adjust modal width */
+.custom-modal-dialog {
+    max-width: 800px; /* Set your desired width */
+}
+
+/* Ensure modal body scrolls if content exceeds height */
+.custom-modal-dialog .modal-body {
+    overflow-y: auto;
+}
+/* Center align the carousel within its column */
+.custom-modal-dialog .carousel {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed column width */
+}
+.modal-body{
+  text-align: justify;
+}
+.modal-header{
+    padding: 10px;
+    background-color: #F874A0;
+}
+.modal-title {
+  color:#F874A0;
+  text-align: left;
+  font-size: 20px;
+}
+.modal-text .mt-3{
+  font-size: 12px;
+}
+.modal-text .card-text{
+  font-size: 15px;
+
+}
+
+
+ /* QUANTITY */
+.quantity-controller {
+  position: relative;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group .btn {
+  border-radius: 0;
+  border: 1px solid #ced4da;
+}
+
+.input-group .form-control {
+  border-radius: 0;
+  text-align: center;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+  border-color: #80bdff;
+}
+
+.input-group .btn:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+form{
+  font-size: 12px;
+}
+
+.modale-footer button{
+  background-color: #F874A0;
+}
+
+.btn-add-cart{
+  background-color: #F874A0;
+  color: white;
+  margin-left: 235px;
+  margin-top: 10px;
+}

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: century gothic;
+
+    font-size: 16px;
+    transition: all 500ms ease;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+}
+
+.box {
+    padding: 2em 2em 0.5em;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    float: center;
+    background-color: rgba(255, 255, 254, 0.2);
+}
+
+.box p{
+    font-size: 15px;
+    color: #e36698;
+    font-weight: bold;
+
+}
+.box h1 {
+    margin-top: -20px;
+    text-align: left;
+    font-size: 2em;
+    color: #333;
+    border-radius: 10px 10px 0px 0px;
+}
+.box h6 {
+    font-size: 15px;
+    color: #333;
+}
+.box .label{
+    color:#333;
+}
+
+.box .form-group {
+    margin: 0.5em 0;
+}
+
+.box .form-group label {
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+}
+
+footer{
+    padding-top: 10px;
+
+}
+.footer h5{
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+.footer .small{
+    color: #f795bd;
+    
+}
+.box .form-group input,
+.box .form-group button {
+    display: block;
+    padding: 0.5em 0;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #8c8c8c;
+    border-radius: 10px;
+}
+
+.box .form-group input{
+    padding: 10px;
+}
+.box .form-group button:focus {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 1em 0.5em;
+    animation: pulse 1s infinite ease;
+}
+
+.box .form-group button {
+    width: 100%;
+    border-color: transparent;
+    border-radius: 10px;
+    outline: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #fbaecd;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 2em;
+    padding: 5px;
+    color:#eee
+    
+}
+
+.box .form-group button:hover {
+    border-color: #e36698;
+    background-color: transparent;
+    color: #333;
+}
+
+.box .form-group button.is-loading::after {
+    animation: spinner 500ms infinite linear;
+    content: "";
+    position: absolute;
+    margin-left: 2em;
+    border: 2px solid #000;
+    border-radius: 100%;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    height: 1em;
+    width: 4%;
+}
+
+.box .footer h5 {
+    margin-top: 1em;
+}
+
+.box .footer p {
+    margin-top: 2em;
+}
+
+.box .footer p .symbols {
+    color: #444;
+}
+
+.box .footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.information-text {
+    color: #ddd;
+}
+
+@media screen and (max-width: 320px) {
+    .box {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .box h1 {
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .box {
+        width: 50%;
+    }
+}
